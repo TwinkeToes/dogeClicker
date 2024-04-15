@@ -20,7 +20,10 @@ document.addEventListener("keydown", event => {
                 button1.id = 'doge-button1';
                 button1.innerHTML = 'Yes!';
                 button1.onclick = function () {
-                    alert('Yes was clicked');
+                    document.getElementById("YesDoge1").innerHTML = 'Ok then, i must get a potion.';
+                        if(counter >= 130) {
+                            document.getElementById("YesDoge2").innerHTML = 'Master doge comes back with a purplish looking liquid in his hand.'; 
+                        } 
                 };
                 document.body.appendChild(button1);
             }
@@ -29,7 +32,7 @@ document.addEventListener("keydown", event => {
                 button2.id = 'doge-button2';
                 button2.innerHTML = 'No!';
                 button2.onclick = function () {
-                    document.getElementById("YesDoge1").innerHTML = '';
+                    document.getElementById("NoDoge1").innerHTML = 'Wrong answer, you are killed by master doge for being so uptight.';
                 };
                 document.body.appendChild(button2);
             }
