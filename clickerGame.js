@@ -21,8 +21,17 @@ document.addEventListener("keydown", event => {
                 button1.innerHTML = 'Yes!';
                 button1.onclick = function () {
                     document.getElementById("YesDoge1").innerHTML = 'Ok then, i must get a potion.';
-                        if(counter >= 130) {
-                            document.getElementById("YesDoge2").innerHTML = 'Master doge comes back with a purplish looking liquid in his hand.'; 
+                        if(counter >= 125) {
+                            document.getElementById("YesDoge2").innerHTML = 'Master doge comes back with a purplish looking liquid in his hand.';
+                            if (counter >= 125) {
+                                if (counter >= 125 || button1.onclick == true) {
+                                    document.getElementById("YesDoge3").innerHTML = 'Drink it, he says. Do you drink it?';
+                                    button1.onclick = function () {
+                                        document.getElementById("YesDoge4").innerHTML = 'Your body melts and starts to rearrange itself into the form of a doge, you can no longer talk and are stuck in this inferior form forever.';
+                                        document.getElementById("TheEnd").innerHTML = 'THE END';
+                                    }
+                                }
+                            } 
                         } 
                 };
                 document.body.appendChild(button1);
@@ -33,6 +42,7 @@ document.addEventListener("keydown", event => {
                 button2.innerHTML = 'No!';
                 button2.onclick = function () {
                     document.getElementById("NoDoge1").innerHTML = 'Wrong answer, you are killed by master doge for being so uptight.';
+                    document.getElementById("TheEnd").innerHTML = 'THE END';
                 };
                 document.body.appendChild(button2);
             }
