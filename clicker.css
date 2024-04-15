@@ -1,0 +1,10 @@
+﻿h1 {
+    color: orange;
+}
+body {
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGlzOWVzenA3am5tN3kyMm1hZWVwY2RtN2IyanA3MWZpNjhmaTdiZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oBQZIgNobc7ewVWvCd/giphy.gif);
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
